@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            Input Form
+        </title>
+        <link rel="stylesheet" href="style.css" />
+        <script type="text/javascript" src="index.js"></script>
+    </head>
+    <h1 style="color: #d2fcc7;padding-left: 30px;margin-bottom: 0px;font-size: 40px;">
+        <center>Smart GreenHouse System</center>
+    </h1>
+    <center><p style="color: #20a09e;">
+        <form action="main2.html" method="POST">
+        <label for="Plant"><p style="color:rgb(162, 255, 0)">Plant:</label>
+        <select name="Plant" id="plant">
+        <option value="Cactus">Cactus</option>
+        <option value="Avocado">Avocado</option>
+        <option value="Apple">Apple</option>
+        </select><br><br>
+        <label for="Temperature">Temperature:</label>
+        <input type="number" id="temperature" name="Temperature" step="0.01" min="0" max="40" required> °C<br><br>
+        <label for="Humidity">Humidity:</label>
+        <input type="number" id="humidity" name="Humidity" step="0.01" min="50" max="100" required> g/m3<br><br>
+        <input type="submit" value="Adjust" onclick="handleSubmit();"/>
+      </form>
+      </p>
+    </center>
+    <a href="RemainingWater.html">
+        <br><br><br><br><br><br><br><br><center><button type="button" class="btn">
+        Remaining Water
+    </button>
+</center>
+    </a>
+    </body>
+</html>
