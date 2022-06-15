@@ -1,0 +1,9 @@
+{
+  "plants": [
+    {
+      "plant": "Cactus",
+      "temperature": "20",
+      "humidity": "50"
+    }
+  ]
+}

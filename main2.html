@@ -307,13 +307,16 @@ span::before {
 	</style>
   </head>
   	<body>
+      
         <script>
-            setTimeout(function(){
-               window.location.href = 'result.html';
-            }, 5000);
+          setTimeout(() => {
+          window.location.href = 'result.html';
+          }, Math.floor(Math.random() * 20000)
+          );
          </script>
-        <button onclick="history.back()">Go Back</button>
 
+        <!-- <button onclick="history.back()">Go Back</button> -->
+        
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
@@ -325,8 +328,21 @@ span::before {
                     <center><div class="loader"></div></center>
                     <br><br><center><span> </span></center>
                   
-                   
-				</h1>
+                    <center><a href="index.html"><button id="some-button">cancel</button></a></center>           
+                    <script>
+                      document.getElementById("some-button").style.display = "none";
+              
+                      function showStuff() {
+                          document.getElementById("some-button").style.display = "inline";
+                      }
+              
+                      function myFunction() {
+                          window.location = "result.html"
+                      }
+              
+                      setTimeout(showStuff, 10000);
+                  </script>
+                  </h1>
 			</div>
 		</div>
 			
